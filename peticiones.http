@@ -1,0 +1,10 @@
+http://localhost:3000/tweets
+
+###
+POST http://localhost:3000/tweets HTTP/1.1
+content-type: application/json
+
+{
+	"author": "Cristian Paniagua",
+	"content": "Hola, este es mi primer tweet"
+}
