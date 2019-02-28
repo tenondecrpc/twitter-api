@@ -11,8 +11,8 @@ const app = express();
 const server = http.Server(app);
 const io = socket(server);
 
-const url = 'mongodb://twitter-user:twitter-password@127.0.0.1:27017/twitter-db?retryWrites=true';
-// const url = 'mongodb+srv://gdgcdeuser:gdgcdepassword@clustertwitterapi-ttl3n.mongodb.net/twitter-db?retryWrites=true';
+// const url = 'mongodb://twitter-user:twitter-password@127.0.0.1:27017/twitter-db?retryWrites=true';
+const url = 'mongodb+srv://twitter-user:twitter-password@clustertwitterapi-ttl3n.mongodb.net/twitter-db?retryWrites=true';
 
 mongoose.connect(url, { useNewUrlParser: true });
 
